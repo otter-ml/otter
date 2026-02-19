@@ -1,0 +1,35 @@
+{
+  "name": "otter-ml",
+  "version": "1.0.2",
+  "description": "AI-powered ML framework - talk to your data, get ML models",
+  "bin": {
+    "otter-ml": "bin/otter.js"
+  },
+  "scripts": {
+    "prepublishOnly": "node -e \"console.log('Publishing otter-ml...')\""
+  },
+  "keywords": [
+    "machine-learning",
+    "ml",
+    "ai",
+    "data",
+    "cli",
+    "otter"
+  ],
+  "author": "otter-ml",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otter-ml/otter.git",
+    "directory": "npm"
+  },
+  "homepage": "https://github.com/otter-ml/otter",
+  "engines": {
+    "node": ">=16"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^25.0.3"
+  }
+}
