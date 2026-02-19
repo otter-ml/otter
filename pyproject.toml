@@ -1,0 +1,33 @@
+[project]
+name = "otter-ml"
+version = "0.1.0"
+description = "🦦 AI-powered ML framework — talk to your data"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.12",
+    "rich>=13",
+    "textual>=0.89",
+    "anthropic>=0.25",
+    "openai>=1.0",
+    "sqlalchemy>=2.0",
+    "pandas>=2.0",
+    "scikit-learn>=1.4",
+    "xgboost>=2.0",
+    "lightgbm>=4.0",
+    "optuna>=3.6",
+    "shap>=0.45",
+    "platformdirs>=4.0",
+]
+
+[project.optional-dependencies]
+ollama = ["ollama>=0.2"]
+
+[project.scripts]
+otter = "otter.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["otter"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
